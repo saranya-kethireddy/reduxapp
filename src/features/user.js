@@ -9,9 +9,9 @@ const initialStateValue = { name: "", age: 0, email: ""};
         login: ( state,action ) => {
             state.value = action.payload;
         },
-        logout: (state, action) => {
+        logout: (state) => {
             state.value = initialStateValue;
-        }
+        },
     },
 });
 
